@@ -1,9 +1,7 @@
-package org.trees.tests;
+package org.smaszno.trees;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.trees.Larch;
-import org.trees.Season;
 
 import java.math.BigDecimal;
 
@@ -39,7 +37,7 @@ public class LarchTest extends TreeTest {
 
     @Before
     public void setUp() throws Exception {
-        tree = new Larch(new BigDecimal("-12.53"), new Integer(30), new Integer(4000));
+        tree = new Larch(new BigDecimal("12.53"), new Integer(30), new Integer(4000));
     }
 
 

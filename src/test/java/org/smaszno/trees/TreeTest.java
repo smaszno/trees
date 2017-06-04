@@ -1,6 +1,4 @@
-package org.trees.tests;
-
-import org.trees.Tree;
+package org.smaszno.trees;
 
 import java.math.BigDecimal;
 

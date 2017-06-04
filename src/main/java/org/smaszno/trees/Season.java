@@ -1,4 +1,4 @@
-package org.trees;
+package org.smaszno.trees;
 
 /**
  * Created by smaszno on 04/06/2017.

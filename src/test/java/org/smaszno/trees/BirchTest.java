@@ -1,9 +1,7 @@
-package org.trees.tests;
+package org.smaszno.trees;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.trees.Birch;
-import org.trees.Season;
 
 import java.math.BigDecimal;
 
