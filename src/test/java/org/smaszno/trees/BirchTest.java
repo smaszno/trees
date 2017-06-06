@@ -1,12 +1,10 @@
 package org.smaszno.trees;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Created by smaszno on 04/06/2017.
@@ -14,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 public class BirchTest extends TreeTest {
     @Test
     public void testBirchHasNoLeavesInWinter() throws Exception {
-        assertFalse("Birch should loose leaves in winter", tree.hasLeavesInSeason(Season.WINTER));
+        Assert.assertFalse("Birch should loose leaves in winter", tree.hasLeavesInSeason(Season.WINTER));
     }
 
     @Test
@@ -22,7 +20,7 @@ public class BirchTest extends TreeTest {
         for (Season season : Season.values())
         {
             if (season != Season.WINTER)
-                assertTrue("Birch should have leaves in "+season.name().toLowerCase(), tree.hasLeavesInSeason(season));
+                Assert.assertTrue("Birch should have leaves in "+season.name().toLowerCase(), tree.hasLeavesInSeason(season));
         }
     }
 

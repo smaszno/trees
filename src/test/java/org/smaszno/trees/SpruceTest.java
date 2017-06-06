@@ -1,11 +1,10 @@
 package org.smaszno.trees;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-
-import static org.junit.Assert.assertTrue;
 
 /**
  * Created by smaszno on 04/06/2017.
@@ -20,7 +19,7 @@ public class SpruceTest extends TreeTest {
     public void testSpruceHasLeavesInAllSeasons() throws Exception {
         for (Season season : Season.values())
         {
-                assertTrue("Spruce should have leaves in "+season.name().toLowerCase(), tree.hasLeavesInSeason(season));
+            Assert.assertTrue("Spruce should have leaves in "+season.name().toLowerCase(), tree.hasLeavesInSeason(season));
         }
     }
 
